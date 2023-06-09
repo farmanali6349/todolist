@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="shortcut icon" href="RESOURCES/todo.svg" type="image/x-icon">
+    <!-- fonts - Geologica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="RESOURCES/todo.svg" alt="todo">
+        <h2>To Do List</h2>
+    </header>
+
+    <section class="container">
+        <div class="left">
+            <!-- Create -->
+            <div class="create">
+                <div>
+                    <h3>Create Task</h3>
+                    <input type="text" name="title" id="title" placeholder="Enter Title">
+                    <textarea name="description" id="description" placeholder="Enter Description"></textarea>
+                </div>
+                <button id="create-btn">Create</button>
+                <p></p>
+            </div>
+
+            <!-- View -->
+            <div class="view">
+                <div class="task">
+                    <h2>This is task heading.</h2>
+                    <div></div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus molestias tenetur omnis nobis? Deleniti officiis architecto sed repudiandae, nulla, quis nam adipisci rerum necessitatibus, neque laboriosam fuga labore explicabo pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, recusandae, ab fuga ullam quaerat facere sit voluptates nesciunt expedita dolor ad porro libero ut ratione. Voluptates reprehenderit unde rem libero!</p>
+                </div>
+            </div>
+            <button id="create-new-task">Create New Task</button>
+        </div>
+
+        <div class="right">
+            <h3>My Tasks</h3>
+            <p class="message">Please create a task.</p>
+            <div class="tasks">
+                <div class="task"">
+                    <h4>This is dummy Task.</h4>
+                    <button id="delete-btn"><img src="RESOURCES/delete.svg" alt="delete" onclick="delTask(dummy)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer><p>Desinged & Developed by <a href="#">Farman Ali</a></p></footer>
+
+    <!-- JS -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
